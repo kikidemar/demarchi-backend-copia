@@ -55,7 +55,7 @@ fetch('/api/products/' + id)
               .then(res => {
                 alert(res.message)
                 if (res.message === `product deleted`)
-                    window.location.href = 'http://localhost:8080/products.html'
+                    window.location.href = 'https://backend-final-icgt.onrender.com/products.html'
               })
               .catch(err => console.log(err))
           })

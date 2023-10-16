@@ -14,7 +14,7 @@ document.getElementById('login').addEventListener('click', (event) => {
     .then((res) => {
       alert(res.message)
       if (res.message === 'User logged in!')
-        window.location.href = 'http://localhost:8080/products.html'
+        window.location.href = 'https://backend-final-icgt.onrender.com/products.html'
     })
     .catch(err => console.log(err))
 })

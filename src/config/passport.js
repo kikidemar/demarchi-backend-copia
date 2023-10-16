@@ -7,7 +7,7 @@ import cartController from '../controllers/cart.controller.js'
 import Cart from '../dao/Mongo/models/Cart.js'
 
 const { GH_CLIENT_ID, GH_CLIENT_SECRET } = process.env
-const callback = "http://localhost:8080/api/auth/github/callback"
+const callback = "https://backend-final-icgt.onrender.com/api/auth/github/callback"
 
 export default function () {
   passport.serializeUser(

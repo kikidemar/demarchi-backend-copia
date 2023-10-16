@@ -119,7 +119,7 @@ auth_router.post('/forgot-pass', async (req,res)=> {
   const subject = 'Reset Password'
   const html = `
   <p>Welcome ${userDB.name}</p>
-  <p>Click <a href='http://localhost:8080/reset-pass.html?token=${token}'>Here</a> to reset password</p>
+  <p>Click <a href='https://backend-final-icgt.onrender.com/reset-pass.html?token=${token}'>Here</a> to reset password</p>
   <p>This link expires in one hour</p>
   `
   await sendMail(email, subject, html)

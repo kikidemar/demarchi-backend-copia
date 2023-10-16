@@ -32,7 +32,7 @@ document.getElementById('user').addEventListener('submit', async (event) => {
 
     alert(res.message);
     if (res.message === 'Password reset successful') {
-      window.location.href = 'http://localhost:8080/login.html';
+      window.location.href = 'https://backend-final-icgt.onrender.com/login.html';
     }
   } catch (error) {
     console.log ("An error occurred. Please try again later.");
