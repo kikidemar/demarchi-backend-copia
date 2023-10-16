@@ -45,8 +45,6 @@ async function fetchCart() {
         if (checkoutButton) {
             checkoutButton.addEventListener('click', async () => {
                 const dataTotal = parseFloat(checkoutButton.getAttribute('dataTotal'));
-
-                // Aquí realizas la solicitud para crear un ticket
                 try {
                     const response = await fetch('/api/ticket', {
                         method: 'POST',
@@ -55,18 +53,22 @@ async function fetchCart() {
                         },
                         body: JSON.stringify({ dataTotal }),
                     });
-
+                    
                     if (response.status === 201) {
-                        // Se creó el ticket exitosamente, puedes redirigir o mostrar un mensaje de éxito
-                        alert('Ticket creado exitosamente.');
+                        const responseData = await response.json();
+                        alert('Ticket created successfully');
+                        
+                        location.replace(`/ticket.html?purchaser=${responseData.ticket.purchaser}`)
+                        
 
                     } else {
-                        // Manejo de errores si la creación del ticket falla
+                        
                         const responseData = await response.json();
-                        alert(`Error al crear el ticket: ${responseData.message}`);
+                        alert(`Error creating ticket: ${responseData.message}`)
+                        location.replace(`/ticket.html?purchaser=${responseData.ticket.purchaser}`)
                     }
                 } catch (error) {
-                    console.error('Error en la solicitud para crear un ticket:', error);
+                    console.error('Error in the request of creating ticket:', error);
                 }
             });
         }

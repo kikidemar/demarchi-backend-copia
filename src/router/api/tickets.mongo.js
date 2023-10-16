@@ -7,5 +7,7 @@ const ticket_router = new Router()
 
 ticket_router.post('/', ticketController.createTicket)
 
+ticket_router.get('/:purchaser', ticketController.getTicket)
+
 
 export default ticket_router
