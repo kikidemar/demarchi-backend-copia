@@ -9,6 +9,9 @@
     "dev": "nodemon src/server.js --mode development",
     "test": "mocha test/products.test.js"
   },
+  "engines": {
+    "node": ">=16"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kikidemar/demarchi-backend-copia.git"
