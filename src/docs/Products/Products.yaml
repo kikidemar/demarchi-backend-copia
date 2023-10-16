@@ -1,0 +1,47 @@
+paths:
+  /api/products:
+    get:
+      summary: Obtiene todos los productos
+      tags:
+        - Products
+      responses:
+        "200":
+          descrption: Los productos fueron obtenidos correctamente de la base de datos
+        "500":
+          descrption: Error interno del server al querer consultar los productos
+
+      post:
+        summary: Crea un producto
+        tags:
+          - Products
+
+components:
+  schemas:
+    Products:
+      type: object
+      properties:
+      title:
+        type: string
+        description: nombre
+      description:
+        type: string
+        description: descripcion
+      price:
+        type: number
+        description: precio del producto
+      thumbnail:
+        type: string
+        description: foto del producto
+      stock:
+        type: number
+        description: stock del producto
+      code:
+        type: string
+        description: codigo del producto
+    example:
+      title: coca cola
+      description: gaseosa
+      price: 300
+      thumbnail: coca.jpg
+      stock: 30
+      code: ABC123

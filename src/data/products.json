@@ -1,0 +1,83 @@
+[
+  {
+    "title": "coca",
+    "description": "Este es un producto prueba",
+    "price": 200,
+    "thumbnail": "Sin imagen",
+    "stock": 25,
+    "code": "abc123",
+    "id": 1
+  },
+  {
+    "title": "sprite",
+    "description": "Este es un producto prueba",
+    "price": 200,
+    "thumbnail": "Sin imagen",
+    "stock": 25,
+    "code": "abc124",
+    "id": 2
+  },
+  {
+    "title": "fanta",
+    "description": "Este es un producto prueba",
+    "price": 200,
+    "thumbnail": "Sin imagen",
+    "stock": 25,
+    "code": "abc125",
+    "id": 3
+  },
+  {
+    "title": "pomelo",
+    "description": "Este es un producto prueba",
+    "price": 200,
+    "thumbnail": "Sin imagen",
+    "stock": 25,
+    "code": "abc126",
+    "id": 4
+  },
+  {
+    "title": "agua",
+    "description": "Este es un producto prueba",
+    "price": 200,
+    "thumbnail": "Sin imagen",
+    "stock": 25,
+    "code": "abc127",
+    "id": 5
+  },
+  {
+    "title": "fernet",
+    "description": "Este es un producto prueba",
+    "price": 200,
+    "thumbnail": "Sin imagen",
+    "stock": 25,
+    "code": "abc128",
+    "id": 6
+  },
+  {
+    "title": "gancia",
+    "description": "Este es un producto prueba",
+    "price": 200,
+    "thumbnail": "Sin imagen",
+    "stock": 25,
+    "code": "abc129",
+    "id": 7
+  },
+  {
+    "title": "redbull",
+    "description": "Este es un producto prueba",
+    "price": 200,
+    "thumbnail": "Sin imagen",
+    "stock": 25,
+    "code": "abc130",
+    "id": 8
+  },
+  {
+    "title": "monster",
+    "description": "Este es un producto prueba",
+    "price": 200,
+    "thumbnail": "Sin imagen",
+    "stock": 25,
+    "code": "abc131",
+    "id": 9
+  }
+]
