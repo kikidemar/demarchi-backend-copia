@@ -1,24 +1,24 @@
 {
-  "name": "demarchi-backend",
+  "name": "demarchi-backend-copia",
   "version": "1.0.0",
   "description": "CLASE 2",
   "main": "productos.js",
   "type": "module",
   "scripts": {
-    "start": "node ./src/server.js --mode production",
-    "dev": "nodemon ./src/server.js --mode development",
+    "start": "node ./src/server.js",
+    "dev": "nodemon ./src/server.js",
     "test": "mocha test/products.test.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kikidemar/Demarchi-Backend.git"
+    "url": "git+https://github.com/kikidemar/demarchi-backend-copia.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/kikidemar/Demarchi-Backend/issues"
+    "url": "https://github.com/kikidemar/demarchi-backend-copia/issues"
   },
-  "homepage": "https://github.com/kikidemar/Demarchi-Backend#readme",
+  "homepage": "https://github.com/kikidemar/demarchi-backend-copia#readme",
   "dependencies": {
     "@faker-js/faker": "^8.0.2",
     "artillery-plugin-metrics-by-endpoint": "^1.2.0",
