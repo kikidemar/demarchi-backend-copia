@@ -5,6 +5,7 @@ import User from '../dao/Mongo/models/User.js'
 import jwt from "passport-jwt"
 import cartController from '../controllers/cart.controller.js'
 import Cart from '../dao/Mongo/models/Cart.js'
+import sendMail from '../utils/sendMail.js'
 
 const { GH_CLIENT_ID, GH_CLIENT_SECRET } = process.env
 const callback = "https://backend-final-icgt.onrender.com/api/auth/github/callback"
@@ -33,6 +34,7 @@ export default function () {
                   cid: cart._id
                 })
                 delete user.password
+                sendMail(req.body.email, 'Thanks for registering', '<h1>Thanks for creating an account in our webside, be welcome!</h1>')
                 return done(null, user)
               }
               return done(null, false)
