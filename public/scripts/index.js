@@ -35,6 +35,7 @@ document.addEventListener('DOMContentLoaded', async function () {
 
   if (userRole === 'admin') {
     adminTab.style.display = 'block';
+    quantity.style.display = 'none';
   }
 
 });
